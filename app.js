@@ -7,13 +7,8 @@ app.use(express.json());
 
 app.get("/select", (req, res) => {
 
-   let result = database.executeQuery();
-    console.log(result);
-
-    resultJson = JSON.stringify(result);
-
-    return res.json({
-        message: resultJson
+    database.executeQuery().then(result => {
+        res.send(result);
     });
 });
 

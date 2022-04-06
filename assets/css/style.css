@@ -1,0 +1,60 @@
+/* body{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/724fb836610119.57224419a212b.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+} */
+
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9279436-4edc-42df-b712-b66258d31054/de6mclv-9385a68a-0f0d-46fc-94a1-2cb35712339b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5Mjc5NDM2LTRlZGMtNDJkZi1iNzEyLWI2NjI1OGQzMTA1NFwvZGU2bWNsdi05Mzg1YTY4YS0wZjBkLTQ2ZmMtOTRhMS0yY2IzNTcxMjMzOWIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pp7QZWwUFUlhKhcr4RuoFf9hWSFUU2pUebt4wwj_HL8);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact {
+    position: absolute;
+    left: calc(50% - 50px);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: #5BBE42;
+}
+
+p {
+    font-size: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.center img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    bottom: 50%;
+}
+
+.imgstars {
+    border-radius: 50%;
+    position: absolute;
+    left: calc(25% - 25px);
+    bottom: -35%;
+}
+
+.container {
+    padding: 0px 50px;
+}

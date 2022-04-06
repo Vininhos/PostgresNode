@@ -1,3 +1,4 @@
+const res = require("express/lib/response");
 const { json } = require("express/lib/response");
 const pg = require("pg");
 
@@ -19,25 +20,17 @@ client.connect(err => {
         console.log("Conectado ao PostgreSQL...");
     }
 });
-function executeQuery() {
-    const query = "SELECT *FROM CLIENTE;"
 
+async function executeQuery() {
+    const query = await client.query("SELECT *FROM CLIENTE;");
+
+    let rows = query.rows;
     let arrayRows = [];
 
-    client.query(query).then(res => {
-        console.log("Selecionando dados do cliente...");
-        const rows = res.rows;
-
-         rows.map(row => {
-             arrayRows.push(row);
-        });
-        console.log("Retornando dados...");
-
-        //client.end;
-
-        return arrayRows.length;
-    }).catch(err => {
-        console.log(err);
+    rows.map(row => {
+        arrayRows.push(row);
     });
+
+    return arrayRows;
 };
 module.exports = { executeQuery };
